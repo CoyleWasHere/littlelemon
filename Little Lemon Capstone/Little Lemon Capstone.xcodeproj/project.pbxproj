@@ -8,17 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		FC95F0A52A5E18A200268837 /* Little_Lemon_CapstoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC95F0A42A5E18A200268837 /* Little_Lemon_CapstoneApp.swift */; };
-		FC95F0A72A5E18A200268837 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC95F0A62A5E18A200268837 /* ContentView.swift */; };
 		FC95F0A92A5E18AA00268837 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC95F0A82A5E18AA00268837 /* Assets.xcassets */; };
-		FC95F0AC2A5E18AA00268837 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC95F0AB2A5E18AA00268837 /* Preview Assets.xcassets */; };
+		FC9E2DD42A6093E400ABF5CB /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9E2DD32A6093E400ABF5CB /* Onboarding.swift */; };
+		FC9E2DD62A609A1F00ABF5CB /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9E2DD52A609A1F00ABF5CB /* Home.swift */; };
+		FC9E2DD82A609A5600ABF5CB /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9E2DD72A609A5600ABF5CB /* Menu.swift */; };
+		FC9E2DDA2A609EC500ABF5CB /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9E2DD92A609EC500ABF5CB /* UserProfile.swift */; };
+		FC9E2DDD2A61B97200ABF5CB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9E2DDB2A61B97200ABF5CB /* Persistence.swift */; };
+		FC9E2DDE2A61B97200ABF5CB /* FetchedObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9E2DDC2A61B97200ABF5CB /* FetchedObjects.swift */; };
+		FC9E2DE02A61B9D200ABF5CB /* MenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9E2DDF2A61B9D200ABF5CB /* MenuList.swift */; };
+		FC9E2DE22A61B9DC00ABF5CB /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9E2DE12A61B9DC00ABF5CB /* MenuItem.swift */; };
+		FC9E2DE72A61BDBA00ABF5CB /* ExampleDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC9E2DE52A61BDBA00ABF5CB /* ExampleDatabase.xcdatamodeld */; };
+		FC9E2DE92A61C22000ABF5CB /* Dish + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9E2DE82A61C22000ABF5CB /* Dish + Extension.swift */; };
+		FC9E2DEB2A61D84400ABF5CB /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = FC9E2DEA2A61D84400ABF5CB /* Preview Content */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FC95F0A12A5E18A200268837 /* Little Lemon Capstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Little Lemon Capstone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC95F0A42A5E18A200268837 /* Little_Lemon_CapstoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Little_Lemon_CapstoneApp.swift; sourceTree = "<group>"; };
-		FC95F0A62A5E18A200268837 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FC95F0A82A5E18AA00268837 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FC95F0AB2A5E18AA00268837 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FC9E2DD32A6093E400ABF5CB /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		FC9E2DD52A609A1F00ABF5CB /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		FC9E2DD72A609A5600ABF5CB /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		FC9E2DD92A609EC500ABF5CB /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		FC9E2DDB2A61B97200ABF5CB /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		FC9E2DDC2A61B97200ABF5CB /* FetchedObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedObjects.swift; sourceTree = "<group>"; };
+		FC9E2DDF2A61B9D200ABF5CB /* MenuList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuList.swift; sourceTree = "<group>"; };
+		FC9E2DE12A61B9DC00ABF5CB /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		FC9E2DE62A61BDBA00ABF5CB /* ExampleDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExampleDatabase.xcdatamodel; sourceTree = "<group>"; };
+		FC9E2DE82A61C22000ABF5CB /* Dish + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dish + Extension.swift"; sourceTree = "<group>"; };
+		FC9E2DEA2A61D84400ABF5CB /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Preview Content"; path = "../../../../Meta Coursera/M4Exercise -1/M4Exercise/Preview Content"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,19 +70,20 @@
 			isa = PBXGroup;
 			children = (
 				FC95F0A42A5E18A200268837 /* Little_Lemon_CapstoneApp.swift */,
-				FC95F0A62A5E18A200268837 /* ContentView.swift */,
+				FC9E2DD32A6093E400ABF5CB /* Onboarding.swift */,
+				FC9E2DD52A609A1F00ABF5CB /* Home.swift */,
+				FC9E2DD72A609A5600ABF5CB /* Menu.swift */,
+				FC9E2DDB2A61B97200ABF5CB /* Persistence.swift */,
+				FC9E2DE12A61B9DC00ABF5CB /* MenuItem.swift */,
+				FC9E2DDF2A61B9D200ABF5CB /* MenuList.swift */,
+				FC9E2DDC2A61B97200ABF5CB /* FetchedObjects.swift */,
+				FC9E2DE82A61C22000ABF5CB /* Dish + Extension.swift */,
+				FC9E2DD92A609EC500ABF5CB /* UserProfile.swift */,
+				FC9E2DE52A61BDBA00ABF5CB /* ExampleDatabase.xcdatamodeld */,
 				FC95F0A82A5E18AA00268837 /* Assets.xcassets */,
-				FC95F0AA2A5E18AA00268837 /* Preview Content */,
+				FC9E2DEA2A61D84400ABF5CB /* Preview Content */,
 			);
 			path = "Little Lemon Capstone";
-			sourceTree = "<group>";
-		};
-		FC95F0AA2A5E18AA00268837 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				FC95F0AB2A5E18AA00268837 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC95F0AC2A5E18AA00268837 /* Preview Assets.xcassets in Resources */,
+				FC9E2DEB2A61D84400ABF5CB /* Preview Content in Resources */,
 				FC95F0A92A5E18AA00268837 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +156,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC95F0A72A5E18A200268837 /* ContentView.swift in Sources */,
+				FC9E2DE72A61BDBA00ABF5CB /* ExampleDatabase.xcdatamodeld in Sources */,
+				FC9E2DE92A61C22000ABF5CB /* Dish + Extension.swift in Sources */,
+				FC9E2DD42A6093E400ABF5CB /* Onboarding.swift in Sources */,
+				FC9E2DD62A609A1F00ABF5CB /* Home.swift in Sources */,
+				FC9E2DE02A61B9D200ABF5CB /* MenuList.swift in Sources */,
+				FC9E2DDA2A609EC500ABF5CB /* UserProfile.swift in Sources */,
+				FC9E2DDD2A61B97200ABF5CB /* Persistence.swift in Sources */,
+				FC9E2DD82A609A5600ABF5CB /* Menu.swift in Sources */,
+				FC9E2DE22A61B9DC00ABF5CB /* MenuItem.swift in Sources */,
+				FC9E2DDE2A61B97200ABF5CB /* FetchedObjects.swift in Sources */,
 				FC95F0A52A5E18A200268837 /* Little_Lemon_CapstoneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +367,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FC9E2DE52A61BDBA00ABF5CB /* ExampleDatabase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FC9E2DE62A61BDBA00ABF5CB /* ExampleDatabase.xcdatamodel */,
+			);
+			currentVersion = FC9E2DE62A61BDBA00ABF5CB /* ExampleDatabase.xcdatamodel */;
+			path = ExampleDatabase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FC95F0992A5E18A200268837 /* Project object */;
 }
