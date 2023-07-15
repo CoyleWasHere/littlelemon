@@ -11,7 +11,7 @@ import SwiftUI
 struct Little_Lemon_CapstoneApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Onboarding()
         }
     }
 }
