@@ -26,9 +26,67 @@ struct Onboarding: View {
                 NavigationLink(destination: Home(), isActive: $isLoggedIn) {
                     return EmptyView()
                 }
-                TextField("First Name", text: $firstName)
-                TextField("Last Name", text: $lastName)
-                TextField("Email", text: $email)
+                // MARK: Header with logo
+                HStack(alignment: .center){
+                    Image("Logo")
+                        .resizable()
+                        .scaledToFit()
+                }
+                .frame(maxWidth: .infinity, maxHeight: 50)
+                Spacer()
+                
+                // MARK: Little Lemon Description
+                Group {
+                    VStack {
+                        HStack{
+                            VStack(alignment: .leading){
+                                Text("Little Lemon")
+                                    .font(.title)
+                                    .foregroundColor(Color.yellow)
+                                    .bold()
+                                Text("Chicago")
+                                    .font(.title2)
+                                    .foregroundColor(Color.white)
+                                    .bold()
+                                    .padding(.bottom)
+                                Text("We are a family owned Mediterranean restauraunt, focused on traditional recipes served with a modern twist")
+                                    .font(.body)
+                                    .foregroundColor(Color.white)
+                            }
+                            
+                            Image("Hero image")
+                                .resizable()
+                                .scaledToFit()
+                                .padding()
+                            
+                        }
+                    }
+                }
+                .padding()
+                .background(.green)
+                Spacer()
+                
+                // MARK: Form
+                Text("Please Create an Account to Continue")
+                VStack(alignment: .leading) {
+                    Text("First Name*")
+                        .foregroundColor(Color.gray)
+                    TextField("First Name", text: $firstName)
+                        .textFieldStyle(.roundedBorder)
+                    
+                    Text("Last Name*")
+                        .foregroundColor(Color.gray)
+                    TextField("Last Name", text: $lastName)
+                        .textFieldStyle(.roundedBorder)
+                    
+                    Text("Email*")
+                        .foregroundColor(Color.gray)
+                    TextField("Email", text: $email)
+                        .textFieldStyle(.roundedBorder)
+                }
+                .padding()
+                Spacer()
+
                 Button("Register") {
                     if firstName.isEmpty || lastName.isEmpty || email.isEmpty {
                         return
@@ -42,6 +100,13 @@ struct Onboarding: View {
                         isLoggedIn = true
                     }
                 }
+                .buttonStyle(.bordered)
+                .foregroundColor(Color.yellow)
+                .background(Color.green)
+                .cornerRadius(5)
+                Spacer()
+
+                
             }
             .onAppear(perform: {
                 if UserDefaults.standard.bool(forKey: loggedInKey) {

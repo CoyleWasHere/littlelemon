@@ -19,7 +19,7 @@
 		FC9E2DE22A61B9DC00ABF5CB /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9E2DE12A61B9DC00ABF5CB /* MenuItem.swift */; };
 		FC9E2DE72A61BDBA00ABF5CB /* ExampleDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC9E2DE52A61BDBA00ABF5CB /* ExampleDatabase.xcdatamodeld */; };
 		FC9E2DE92A61C22000ABF5CB /* Dish + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9E2DE82A61C22000ABF5CB /* Dish + Extension.swift */; };
-		FC9E2DEB2A61D84400ABF5CB /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = FC9E2DEA2A61D84400ABF5CB /* Preview Content */; };
+		FCE135FF2A635D3000CBF152 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE135FE2A635D3000CBF152 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +36,7 @@
 		FC9E2DE12A61B9DC00ABF5CB /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		FC9E2DE62A61BDBA00ABF5CB /* ExampleDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExampleDatabase.xcdatamodel; sourceTree = "<group>"; };
 		FC9E2DE82A61C22000ABF5CB /* Dish + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dish + Extension.swift"; sourceTree = "<group>"; };
-		FC9E2DEA2A61D84400ABF5CB /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Preview Content"; path = "../../../../Meta Coursera/M4Exercise -1/M4Exercise/Preview Content"; sourceTree = "<group>"; };
+		FCE135FE2A635D3000CBF152 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,16 +72,16 @@
 				FC95F0A42A5E18A200268837 /* Little_Lemon_CapstoneApp.swift */,
 				FC9E2DD32A6093E400ABF5CB /* Onboarding.swift */,
 				FC9E2DD52A609A1F00ABF5CB /* Home.swift */,
+				FCE135FE2A635D3000CBF152 /* HomeView.swift */,
 				FC9E2DD72A609A5600ABF5CB /* Menu.swift */,
+				FC9E2DD92A609EC500ABF5CB /* UserProfile.swift */,
 				FC9E2DDB2A61B97200ABF5CB /* Persistence.swift */,
 				FC9E2DE12A61B9DC00ABF5CB /* MenuItem.swift */,
 				FC9E2DDF2A61B9D200ABF5CB /* MenuList.swift */,
 				FC9E2DDC2A61B97200ABF5CB /* FetchedObjects.swift */,
 				FC9E2DE82A61C22000ABF5CB /* Dish + Extension.swift */,
-				FC9E2DD92A609EC500ABF5CB /* UserProfile.swift */,
 				FC9E2DE52A61BDBA00ABF5CB /* ExampleDatabase.xcdatamodeld */,
 				FC95F0A82A5E18AA00268837 /* Assets.xcassets */,
-				FC9E2DEA2A61D84400ABF5CB /* Preview Content */,
 			);
 			path = "Little Lemon Capstone";
 			sourceTree = "<group>";
@@ -144,7 +144,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC9E2DEB2A61D84400ABF5CB /* Preview Content in Resources */,
 				FC95F0A92A5E18AA00268837 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,6 +164,7 @@
 				FC9E2DDD2A61B97200ABF5CB /* Persistence.swift in Sources */,
 				FC9E2DD82A609A5600ABF5CB /* Menu.swift in Sources */,
 				FC9E2DE22A61B9DC00ABF5CB /* MenuItem.swift in Sources */,
+				FCE135FF2A635D3000CBF152 /* HomeView.swift in Sources */,
 				FC9E2DDE2A61B97200ABF5CB /* FetchedObjects.swift in Sources */,
 				FC95F0A52A5E18A200268837 /* Little_Lemon_CapstoneApp.swift in Sources */,
 			);
