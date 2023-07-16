@@ -12,24 +12,50 @@ struct Menu: View {
     
     @Environment(\.managedObjectContext) private var viewContext
     @State var searchText = ""
+    @State var descriptions = ["Fantastic", "Delish", "Yummy", "Sooooo Goooooood", "My Favorite"]
+    @State var randomInt = Int.random(in: 0...4)
     
     var body: some View {
         
-        VStack {
-            TextField("Search Menu", text: $searchText)
-            FetchedObjects(predicate: buildPredicate(), sortDescriptors: buildSortDescriptors()) {
+        NavigationView {
+            VStack {
+                TextField("Search Menu", text: $searchText)
+                    .multilineTextAlignment(TextAlignment.center)
+                    .textFieldStyle(.roundedBorder)
+                FetchedObjects(predicate: buildPredicate(), sortDescriptors: buildSortDescriptors()) {
                     (dishes: [Dish]) in
                     List {
                         ForEach(dishes) { dish in
-                            Text(dish.title ?? "TITLE")
-                            Text(dish.price ?? "PRICE")
-                            AsyncImage(url: URL(string: dish.image ?? ""))
+                            HStack{
+                                Spacer()
+                                NavigationLink {
+                                    Text("This food is \(descriptions[randomInt])")
+                                } label: {
+                                    VStack(alignment: .leading){
+                                        Text(dish.title ?? "")
+                                            .font(.title3)
+                                            .bold()
+                                        Text("Try our delicious food")
+                                            .font(.body)
+                                            .foregroundColor(Color.gray)
+                                        Text("$" + (dish.price ?? ""))
+                                            .font(.title3)
+                                            .foregroundColor(Color.gray)
+                                    }
+                                    
+                                }
+                                Spacer()
+                                AsyncImage(url: URL(string: dish.image ?? ""))
+                                    .frame(width: 100, height: 100)
+                                Spacer()
+                            }
                         }
                     }
                 }
-        }
-        .onAppear{
-            getMenuData()
+            }
+            .onAppear{
+                getMenuData()
+            }
         }
     }
     
@@ -45,6 +71,7 @@ struct Menu: View {
                 let fullMenuArray = menu?.menu
                 
                 for menuItems in fullMenuArray! {
+                    // guard let _ = exists(name: menuItems.title, viewContext) else {continue}
                     let dish = Dish(context: viewContext)
                     dish.title = menuItems.title
                     dish.price = menuItems.price

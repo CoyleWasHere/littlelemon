@@ -14,8 +14,9 @@ struct Home: View {
     
     var body: some View {
         TabView {
-            Text("Home Page")
+            HomeView()
                 .tabItem({Label("Home", systemImage: "house")})
+            
             Menu()
                 .tabItem({Label("Menu", systemImage: "menucard")})
                 .environment(\.managedObjectContext, persistence.container.viewContext)
