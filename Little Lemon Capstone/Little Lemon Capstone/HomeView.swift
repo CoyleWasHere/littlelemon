@@ -41,7 +41,7 @@ struct HomeView: View {
                             VStack(alignment: .leading){
                                 Text("Little Lemon")
                                     .font(.title)
-                                    .foregroundColor(Color.yellow)
+                                    .foregroundColor(Color(red: 244/255, green: 206/255, blue: 20/255))
                                     .bold()
                                 Text("Chicago")
                                     .font(.title2)
@@ -65,7 +65,7 @@ struct HomeView: View {
                     }
                 }
                 .padding()
-                .background(Color.green)
+                .background(Color(red: 73/255, green: 94/255, blue: 87/255))
                 
                 // TODO: Horizontal Scrollview and clickable buttons
                 Group {
@@ -78,31 +78,32 @@ struct HomeView: View {
                             Spacer()
                             Text("Starters")
                                 .padding(.all, 5.0)
-                                .border(Color.gray, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
-                                .background(Color.gray)
+                                .border(Color(red: 73/255, green: 94/255, blue: 87/255), width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+                                .background(Color(red: 73/255, green: 94/255, blue: 87/255))
                                 .cornerRadius(5)
                             Spacer()
                             Text("Mains")
                                 .padding(.all, 5.0)
-                                .border(Color.gray, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
-                                .background(Color.gray)
+                                .border(Color(red: 73/255, green: 94/255, blue: 87/255), width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+                                .background(Color(red: 73/255, green: 94/255, blue: 87/255))
                                 .cornerRadius(5)
                             Spacer()
                             Text("Deserts")
                                 .padding(.all, 5.0)
-                                .border(Color.gray, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
-                                .background(Color.gray)
+                                .border(Color(red: 73/255, green: 94/255, blue: 87/255), width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+                                .background(Color(red: 73/255, green: 94/255, blue: 87/255))
                                 .cornerRadius(5)
                             Spacer()
                             Text("Drinks")
                                 .padding(.all, 5.0)
-                                .border(Color.gray, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
-                                .background(Color.gray)
+                                .border(Color(red: 73/255, green: 94/255, blue: 87/255), width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+                                .background(Color(red: 73/255, green: 94/255, blue: 87/255))
                                 .cornerRadius(5)
                             Spacer()
                         }
                         .padding(.vertical, 3.0)
                         .frame(maxWidth: .infinity)
+                        .foregroundColor(Color(red: 244/255, green: 206/255, blue: 20/255))
                         
                     }
                 }

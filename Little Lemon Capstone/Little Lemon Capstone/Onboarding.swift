@@ -42,7 +42,7 @@ struct Onboarding: View {
                             VStack(alignment: .leading){
                                 Text("Little Lemon")
                                     .font(.title)
-                                    .foregroundColor(Color.yellow)
+                                    .foregroundColor(Color(red: 244/255, green: 206/255, blue: 20/255))
                                     .bold()
                                 Text("Chicago")
                                     .font(.title2)
@@ -63,7 +63,7 @@ struct Onboarding: View {
                     }
                 }
                 .padding()
-                .background(.green)
+                .background(Color(red: 73/255, green: 94/255, blue: 87/255))
                 Spacer()
                 
                 // MARK: Form
@@ -76,13 +76,21 @@ struct Onboarding: View {
                     
                     Text("Last Name*")
                         .foregroundColor(Color.gray)
+                        .opacity(firstName.isEmpty ? 0 : 1 )
+                        .animation(.easeIn)
                     TextField("Last Name", text: $lastName)
                         .textFieldStyle(.roundedBorder)
+                        .opacity(firstName.isEmpty ? 0 : 1 )
+                        .animation(.easeIn)
                     
                     Text("Email*")
                         .foregroundColor(Color.gray)
+                        .opacity((lastName.isEmpty || firstName.isEmpty) ? 0 : 1 )
+                        .animation(.easeIn)
                     TextField("Email", text: $email)
                         .textFieldStyle(.roundedBorder)
+                        .opacity((lastName.isEmpty || firstName.isEmpty) ? 0 : 1 )
+                        .animation(.easeIn)
                 }
                 .padding()
                 Spacer()
@@ -101,8 +109,8 @@ struct Onboarding: View {
                     }
                 }
                 .buttonStyle(.bordered)
-                .foregroundColor(Color.yellow)
-                .background(Color.green)
+                .foregroundColor(Color(red: 244/255, green: 206/255, blue: 20/255))
+                .background(Color(red: 73/255, green: 94/255, blue: 87/255))
                 .cornerRadius(5)
                 Spacer()
 
