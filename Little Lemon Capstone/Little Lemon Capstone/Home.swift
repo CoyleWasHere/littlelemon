@@ -16,11 +16,8 @@ struct Home: View {
         TabView {
             HomeView()
                 .tabItem({Label("Home", systemImage: "house")})
-            
-            Menu()
-                .tabItem({Label("Menu", systemImage: "menucard")})
                 .environment(\.managedObjectContext, persistence.container.viewContext)
-            
+
             UserProfile()
                 .tabItem({Label("Profile", systemImage: "person")})
         }

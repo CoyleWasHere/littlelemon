@@ -29,25 +29,53 @@ struct Menu: View {
                             HStack{
                                 Spacer()
                                 NavigationLink {
+                                    Image("Logo")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(height: 50)
                                     Text("This food is \(descriptions[randomInt])")
                                 } label: {
-                                    VStack(alignment: .leading){
-                                        Text(dish.title ?? "")
-                                            .font(.title3)
-                                            .bold()
-                                        Text("Try our delicious food")
-                                            .font(.body)
-                                            .foregroundColor(Color.gray)
-                                        Text("$" + (dish.price ?? ""))
-                                            .font(.title3)
-                                            .foregroundColor(Color.gray)
+                                    HStack {
+                                        VStack(alignment: .leading){
+                                            Text(dish.title ?? "")
+                                                .font(.title3)
+                                                .bold()
+                                            Text("Try our delicious food")
+                                                .font(.body)
+                                                .foregroundColor(Color.gray)
+                                            Text("$" + (dish.price ?? ""))
+                                                .font(.title3)
+                                                .foregroundColor(Color.gray)
+                                        }
+                                        Spacer()
+                                        Image(dish.title ?? "")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 50, height: 50)
+                                        /* if let imageString = dish.image {
+                                            
+                                            AsyncImage(url: URL(string: imageString))  { response in
+                                                if let image = response.image {
+                                                    image.resizable()
+                                                        .aspectRatio(contentMode: .fill)
+                                                        .frame(width: 75, height: 75, alignment: .center)
+                                                        .cornerRadius(5)
+
+                                                } else if response.error != nil {
+                                                    Color.gray
+                                                        .frame(width: 75, height: 75, alignment: .center)
+                                                        .cornerRadius (5)
+                                                } else {
+                                                    Color.gray
+                                                        .frame(width: 75, height: 75, alignment: .center)
+                                                        .cornerRadius (5)
+                                                }
+                                            }
+                                        } */
                                     }
                                     
                                 }
-                                Spacer()
-                                AsyncImage(url: URL(string: dish.image ?? ""))
-                                    .frame(width: 100, height: 100)
-                                Spacer()
+
                             }
                         }
                     }

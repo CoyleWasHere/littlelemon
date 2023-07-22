@@ -35,6 +35,7 @@ struct UserProfile: View {
                 
                 Text("Personal Information")
                     .bold()
+                    .padding(.leading)
                 
                 // MARK: Avatar
                 HStack{
@@ -95,8 +96,8 @@ struct UserProfile: View {
                 self.presentation.wrappedValue.dismiss()
             }
             .buttonStyle(.bordered)
-            .foregroundColor(Color.yellow)
-            .background(Color.green)
+            .foregroundColor(Color(red: 244/255, green: 206/255, blue: 20/255))
+            .background(Color(red: 73/255, green: 94/255, blue: 87/255))
             .cornerRadius(5)
             Spacer()
         }
